@@ -1,0 +1,16 @@
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\bin\Debug\net5.0\FluentConnectionSimulation.exe
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\bin\Debug\net5.0\FluentConnectionSimulation.deps.json
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\bin\Debug\net5.0\FluentConnectionSimulation.runtimeconfig.json
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\bin\Debug\net5.0\FluentConnectionSimulation.runtimeconfig.dev.json
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\bin\Debug\net5.0\FluentConnectionSimulation.dll
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\bin\Debug\net5.0\ref\FluentConnectionSimulation.dll
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\bin\Debug\net5.0\FluentConnectionSimulation.pdb
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\obj\Debug\net5.0\FluentConnectionSimulation.csproj.AssemblyReference.cache
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\obj\Debug\net5.0\FluentConnectionSimulation.GeneratedMSBuildEditorConfig.editorconfig
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\obj\Debug\net5.0\FluentConnectionSimulation.AssemblyInfoInputs.cache
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\obj\Debug\net5.0\FluentConnectionSimulation.AssemblyInfo.cs
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\obj\Debug\net5.0\FluentConnectionSimulation.csproj.CoreCompileInputs.cache
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\obj\Debug\net5.0\FluentConnectionSimulation.dll
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\obj\Debug\net5.0\ref\FluentConnectionSimulation.dll
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\obj\Debug\net5.0\FluentConnectionSimulation.pdb
+E:\RepoGit\FluentConnectionSimulation\FluentConnectionSimulation\obj\Debug\net5.0\FluentConnectionSimulation.genruntimeconfig.cache
