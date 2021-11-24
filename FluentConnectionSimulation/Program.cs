@@ -1,5 +1,6 @@
 ﻿using FluentConnectionSimulation.Dtos;
 using FluentConnectionSimulation.Implementations;
+using FluentConnectionSimulation.Interfaces;
 using System;
 using System.IO;
 
@@ -9,13 +10,14 @@ namespace FluentConnectionSimulation
     {
         static void Main(string[] args)
         {
-            Ftp.Connect("ftp://192.168.0.1/", new Credentials() { User = "GTouchet", Password = "1234" })
-                .Download("/pictures/myPhoto")
-                .ToFile("C:/Documents/Images/myPhoto");
+            IFtpTransfer ftp = Ftp.Connect("ftp://192.168.0.1/", new Credentials() { User = "GTouchet", Password = "1234" });
 
-            Ftp.Connect("ftp://145.17.119.201/", new Credentials() { User = "Anonymous", Password = "unknown" })
-                .Upload("/videos/myVideo")
-                .FromStream(Stream.Null);
+            ftp.Download("/pictures/myPhoto").ToFile("C:/Documents/Images/myPhoto");
+            ftp.Upload("/videos/myVideo").FromStream("C:/Documents/Videos/myVideo");
+
+            Stream downloadedStream = Ftp.Connect("ftp://100.50.0.1/", new Credentials() { User = "GTouchet", Password = "abcd" })
+                .Download("/pictures/myPhoto")
+                .ToStream("C:/Documents/Images/myPhoto");
         }
     }
 }

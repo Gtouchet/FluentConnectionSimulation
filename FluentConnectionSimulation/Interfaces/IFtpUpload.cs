@@ -10,6 +10,6 @@ namespace FluentConnectionSimulation.Interfaces
     public interface IFtpUpload
     {
         void FromFile(string filePath);
-        void FromStream(Stream stream);
+        void FromStream(string streamPath);
     }
 }

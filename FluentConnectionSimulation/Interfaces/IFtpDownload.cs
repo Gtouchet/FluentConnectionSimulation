@@ -9,7 +9,7 @@ namespace FluentConnectionSimulation.Interfaces
 {
     public interface IFtpDownload
     {
-        void ToFile(string filePath);
-        void ToStream(Stream stream);
+        Stream ToFile(string filePath);
+        Stream ToStream(string streamPath);
     }
 }

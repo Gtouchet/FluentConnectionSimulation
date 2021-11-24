@@ -1,7 +1,6 @@
 ﻿using FluentConnectionSimulation.Dtos;
 using FluentConnectionSimulation.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -13,7 +12,7 @@ namespace FluentConnectionSimulation.Implementations
     {
         private string FtpUrl;
         private Credentials Credentials;
-        private string FileName;
+        private string FilePath;
 
         private Ftp(string ftpUrl, Credentials credentials)
         {
@@ -33,30 +32,32 @@ namespace FluentConnectionSimulation.Implementations
             return new Ftp(ftpUrl, credentials);
         }
 
-        public IFtpDownload Download(string fileName)
+        public IFtpDownload Download(string filePath)
         {
-            Console.WriteLine($"Attempting to download {fileName}");
+            Console.WriteLine($"Attempting to download {filePath}");
             Ftp clone = new Ftp(this);
-            clone.FileName = fileName;
+            clone.FilePath = filePath;
             return clone;
         }
 
-        public IFtpUpload Upload(string fileName)
+        public IFtpUpload Upload(string filePath)
         {
-            Console.WriteLine($"Attempting to upload {fileName}");
+            Console.WriteLine($"Attempting to upload {filePath}");
             Ftp clone = new Ftp(this);
-            clone.FileName = fileName;
+            clone.FilePath = filePath;
             return clone;
         }
 
-        public void ToFile(string filePath)
+        public Stream ToFile(string filePath)
         {
             Console.WriteLine($"File {filePath} downloaded\n");
+            return File.Create(filePath);
         }
 
-        public void ToStream(Stream stream)
+        public Stream ToStream(string streamPath)
         {
-            Console.WriteLine($"Stream {stream} downloaded\n");
+            Console.WriteLine($"Stream {streamPath} downloaded\n");
+            return Stream.Null;
         }
 
         public void FromFile(string filePath)
@@ -64,9 +65,9 @@ namespace FluentConnectionSimulation.Implementations
             Console.WriteLine($"File {filePath} uploaded\n");
         }
 
-        public void FromStream(Stream stream)
+        public void FromStream(string streamPath)
         {
-            Console.WriteLine($"Stream {stream} uploaded\n");
+            Console.WriteLine($"Stream {streamPath} uploaded\n");
         }
     }
 }
